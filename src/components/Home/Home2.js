@@ -2,10 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import ContactMe from "../About/ContackMe";
 import {
-  AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -60,9 +59,10 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
+         
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span>with me
             </p>
             <ul className="home-about-social-links">
         

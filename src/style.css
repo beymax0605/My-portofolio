@@ -7,8 +7,8 @@ html {
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(14, 13, 13, 0.678),
+    rgba(14, 13, 13, 0.679)
   );
 
   --imp-text-color: #c770f0;
@@ -321,6 +321,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
 }
 
 .home-about-description {

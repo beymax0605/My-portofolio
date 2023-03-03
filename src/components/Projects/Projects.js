@@ -13,9 +13,6 @@ import flyjetblak from "../../Assets/Projects/flyjetblak.png";
 import marriottbonvo from "../../Assets/Projects/marriottbonvo.png";
 import nomadtraveltools from "../../Assets/Projects/nomadtraveltools.png";
 
-
-
-
 function Projects() {
   return (
     <Container fluid className="project-section">

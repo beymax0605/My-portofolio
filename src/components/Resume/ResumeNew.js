@@ -8,8 +8,22 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink =
-  "https://drive.google.com/file/d/1CqyOh9Gsl_0fmmfxE8fYYJzokuf7qR04/view?usp=sharing";
+// const resumeLink =
+//   "https://drive.google.com/file/d/1CqyOh9Gsl_0fmmfxE8fYYJzokuf7qR04/view?usp=sharing";
+const resumeLink = pdf;
+
+  fetch('https://drive.google.com/file/d/1CqyOh9Gsl_0fmmfxE8fYYJzokuf7qR04/view?usp=sharing', { mode: 'no-cors' })
+  .then(response => {
+   console.log(response);
+  })
+  .catch(error => {
+   console.log("ok")
+
+  });
+
+
+
+
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -38,18 +52,6 @@ function ResumeNew() {
           <Document file={resumeLink} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
         </Row>
       </Container>
     </div>
